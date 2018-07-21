@@ -1,9 +1,7 @@
 filename,width,height,class,xmin,ymin,xmax,ymax
 download (64).jpg,217,232,chihuahua,47,7,175,109
-download (23).jpg,225,225,chihuahua,2,14,221,225
 images (21).jpg,225,225,chihuahua,1,9,138,224
 download (35).jpg,275,183,chihuahua,73,28,227,169
-download (17).jpg,259,194,chihuahua,1,18,239,160
 images (7).jpg,278,181,chihuahua,26,30,238,171
 download (38).jpg,300,168,chihuahua,185,38,296,150
 download (37).jpg,183,275,chihuahua,29,22,165,263
@@ -36,7 +34,6 @@ download (43).jpg,275,183,chihuahua,91,15,178,179
 images (18).jpg,211,238,chihuahua,34,13,174,231
 images (22).jpg,259,194,chihuahua,35,18,201,194
 download (45).jpg,259,194,chihuahua,117,31,194,149
-download (24).jpg,273,185,chihuahua,114,6,257,175
 images (5).jpg,276,183,chihuahua,49,2,206,183
 download (50).jpg,225,225,chihuahua,1,22,225,201
 images (9).jpg,284,177,chihuahua,79,9,270,177
@@ -45,7 +42,6 @@ download (41).jpg,231,219,chihuahua,4,5,211,217
 images (45).jpg,275,183,chihuahua,49,1,217,182
 images (11).jpg,183,275,chihuahua,13,12,169,204
 images (49).jpg,259,194,chihuahua,82,21,208,180
-download (25).jpg,225,225,chihuahua,42,13,189,207
 images (12).jpg,225,224,chihuahua,17,1,213,220
 download (56).jpg,300,168,chihuahua,1,2,280,168
 download (61).jpg,262,193,chihuahua,111,7,204,128
@@ -56,10 +52,6 @@ images (59).jpg,300,168,chihuahua,64,15,226,147
 images (29).jpg,194,259,chihuahua,7,33,191,259
 images (25).jpg,220,229,chihuahua,25,28,193,214
 images (34).jpg,275,183,chihuahua,49,1,204,182
-images (26).jpg,221,228,chihuahua,9,40,121,200
-images (26).jpg,221,228,chihuahua,110,23,209,187
-images (19).jpg,299,169,chihuahua,155,19,276,149
-images (19).jpg,299,169,chihuahua,28,29,134,129
 images (53).jpg,211,239,chihuahua,43,16,176,122
 download (19).jpg,251,201,chihuahua,52,1,250,200
 download (46).jpg,225,225,chihuahua,28,17,203,225
@@ -77,9 +69,7 @@ download (54).jpg,259,194,chihuahua,115,26,190,136
 download (18).jpg,256,197,chihuahua,95,47,211,187
 download (62).jpg,314,161,chihuahua,88,12,175,161
 download (49).jpg,300,168,chihuahua,34,6,256,167
-images (3).jpg,221,228,chihuahua,37,13,193,215
 download (63).jpg,284,160,chihuahua,50,12,219,132
-images (55).jpg,227,222,chihuahua,99,18,187,144
 download (58).jpg,300,168,chihuahua,106,40,274,141
 images (51).jpg,187,269,chihuahua,20,81,160,237
 images (38).jpg,225,225,chihuahua,3,17,206,159
