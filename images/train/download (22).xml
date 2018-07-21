@@ -1,0 +1,26 @@
+<annotation>
+	<folder>Images Dataset</folder>
+	<filename>download (22).jpg</filename>
+	<path>C:\Users\afont\OneDrive\Desktop\projects\Images Dataset\download (22).jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>183</width>
+		<height>275</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>chihuahua</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>22</xmin>
+			<ymin>37</ymin>
+			<xmax>168</xmax>
+			<ymax>221</ymax>
+		</bndbox>
+	</object>
+</annotation>
