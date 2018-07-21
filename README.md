@@ -7,7 +7,7 @@ Tensorflow Training Process (from scratch):
         
         xml_to_csv.py
     
-    b.	Once you have converted the files from .xml to .csv, then create the TFRecord from the .csv file. Use the python script named generate_tfrecord.py. There are a few modifications that must be made: Modify the ##row_label## value to be  equals to whatever label you gave the images on step 1. 
+    b.	Once you have converted the files from .xml to .csv, then create the TFRecord from the .csv file. Use the python script named generate_tfrecord.py. There are a few modifications that must be made: Modify the **row_label** value to be  equals to whatever label you gave the images on step 1. 
 
     c. Once you are ready to generate the TF record, run the following:
         
@@ -15,4 +15,4 @@ Tensorflow Training Process (from scratch):
         
         python generate_tfrecord.py --csv_input=data/test_labels.csv  --output_path=data/test.record
         
-    A file named ##test.record## and ##train.record## should have been generated under the data directory. These files will be used to train your TensorFlow model. 
+    A file named **test.record** and **train.record** should have been generated under the data directory. These files will be used to train your TensorFlow model. 
