@@ -1,7 +1,7 @@
 ## Setup
 1. Follow [these](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/installation.md) instructions.
 
-Tensorflow Training Process (from scratch):
+## Tensorflow Training Process (from scratch):
 1.	Manually label the images. Use the following program to help you with the labelling process: https://github.com/tzutalin/labelImg. The LabelImg app will allow you to label an object within an image, and spit out metadata about that object in a .xml file. 
 2.	Separate the labeled images into 2 sets: training (90% of total data) & testing (10% of total data).
 3.	Create TF records for the datasets:
