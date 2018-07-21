@@ -1,3 +1,6 @@
+## Setup
+1. Follow [these](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/installation.md) instructions.
+
 Tensorflow Training Process (from scratch):
 1.	Manually label the images. Use the following program to help you with the labelling process: https://github.com/tzutalin/labelImg. The LabelImg app will allow you to label an object within an image, and spit out metadata about that object in a .xml file. 
 2.	Separate the labeled images into 2 sets: training (90% of total data) & testing (10% of total data).
@@ -5,11 +8,13 @@ Tensorflow Training Process (from scratch):
     
     a.	Convert image .xml data into .csv by running the following script:
         
-        xml_to_csv.py
+        python xml_to_csv.py
     
-    b.	Once you have converted the files from .xml to .csv, then create the TFRecord from the .csv file. Use the python script named generate_tfrecord.py. There are a few modifications that must be made: Modify the **row_label** value to be  equals to whatever label you gave the images on step 1. 
-
-    c. Once you are ready to generate the TF record, run the following:
+    b.	Once you have converted the files from .xml to .csv, then from the tensorflow/models/research directory, run the following command to install the **object_detection** api:
+    
+        python setup.py install    
+    
+    c.  Once the object_detection API has  been installed, then we're ready to generate the TF records. We'll be using the script named **generate_tfrecord.py**. Note:There are a few modifications that must be made: Modify the **row_label** value to be  equals to whatever label you gave the images on step 1. Once you are ready, run the following:
         
         python generate_tfrecord.py --csv_input=data/train_labels.csv  --output_path=data/train.record
         
