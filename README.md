@@ -42,7 +42,7 @@
   
   5. Move the following directories and files to the TensorFlow object-detection API ([models/research/object-detection](https://github.com/tensorflow/models/tree/master/research/object_detection)): **data**, **images**, **ssd_mobilenet_v1_coco_11_06_2017**, **training**, and **ssd_mobilenet_v1_pets.config**. 
   
-  6. If you have not already, include **[{LocalPath}/models/research/slim](https://github.com/tensorflow/models/tree/master/research/slim)** to your environment variables as part of **PYTHONPATH**.
+  6. If you have not already, add **[{LocalPath}/models/research/slim](https://github.com/tensorflow/models/tree/master/research/slim)** to your environment variables as part of **PYTHONPATH**.
   
   7. Once you are ready to train, run the following command:
   
@@ -58,6 +58,12 @@
   INFO:tensorflow:global step x: loss = x.xx (0.xxxx sec/step)
   ```
   
-  Your goal should be to get your loss to be about 1. Always make sure it's below 2.
+  Your goal should be to get your loss to be about 1. Always make sure it's below 2. While it runs, one option you have is to load up Tensorboard to see how to training is doing. To load up Tensorboard, from the object-detection API, run the following:
+  
+  ```
+  tensorboard --logdir=training/
+  ```
+  
+  Running the above script should load up tensorboard on your localhost. And what you want to look out for is mainly **total_loss**. 
   
   
