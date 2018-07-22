@@ -3,7 +3,7 @@
 2. [Data Gathering](data-gathering)
 3. [Model Training](model-training)
 
-## Installation
+## Dependency-Installation
 1. Follow [these](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/installation.md) instructions.
 
 ## Data Gathering:
