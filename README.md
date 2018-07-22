@@ -11,7 +11,7 @@
 2.	Separate the labeled images into 2 sets: training (90% of total data) & testing (10% of total data).
 3.	Create TF records for the datasets:
     
-    a.	Convert image .xml data into .csv by running the following script:
+    a.	Convert image .xml data into .csv by running the following script from the terminal:
         
         python xml_to_csv.py
     
