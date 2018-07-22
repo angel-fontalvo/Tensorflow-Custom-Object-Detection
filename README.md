@@ -1,7 +1,7 @@
 ## Tensorflow Training Process (from scratch):
-1. [Dependencies Installation](dependency-installation)
-2. [Data Gathering](data-gathering)
-3. [Model Training](model-training)
+1. [Dependencies Installation](#dependency-installation)
+2. [Data Gathering](#data-gathering)
+3. [Model Training](#model-training)
 
 ## Dependency-Installation
 1. Follow [these](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/installation.md) instructions.
