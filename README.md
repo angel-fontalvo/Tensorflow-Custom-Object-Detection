@@ -42,3 +42,22 @@
   
   5. Move the following directories and files to the TensorFlow object-detection API ([models/research/object-detection](https://github.com/tensorflow/models/tree/master/research/object_detection)): **data**, **images**, **ssd_mobilenet_v1_coco_11_06_2017**, **training**, and **ssd_mobilenet_v1_pets.config**. 
   
+  6. If you have not already, include **[{LocalPath}/models/research/slim](https://github.com/tensorflow/models/tree/master/research/slim)** to your environment variables as part of **PYTHONPATH**.
+  
+  7. Once you are ready to train, run the following command:
+  
+  ```  
+  python legacy/train.py --logtostderr --train_dir=training/ --pipeline_config_path=training/ssd_mobilenet_v1_pets.config    
+  ```
+  
+  **NOTE**: As of July 13, 2018, train was moved to the legacy directory. Research how Google recommends you train new models. 
+  
+  8. If everything worked correctly, you should start seeing the following message repeating (with only the step and loss updating):
+  
+  ```
+  INFO:tensorflow:global step x: loss = x.xx (0.xxxx sec/step)
+  ```
+  
+  Your goal should be to get your loss to be about 1. Always make sure it's below 2.
+  
+  
