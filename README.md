@@ -2,6 +2,7 @@
 1. [Dependencies Installation](#dependency-installation)
 2. [Data Preparation](#data-preparation)
 3. [Model Training](#model-training)
+4. [Testing Custom Object Detection](#testing-custom-object-detection)
 
 ## Dependency-Installation
 1. Follow [these](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/installation.md) instructions.
@@ -65,5 +66,7 @@
   ```
   
   Running the above script should load up tensorboard on your localhost. And what you want to look out for is mainly **total_loss**. 
+  
+  ## Testing Custom Object Detection
   
   
