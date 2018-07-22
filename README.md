@@ -1,4 +1,4 @@
-## Tensorflow Training Process (from scratch):
+## Tensorflow Training Process:
 1. [Dependencies Installation](#dependency-installation)
 2. [Data Gathering](#data-gathering)
 3. [Model Training](#model-training)
@@ -28,3 +28,6 @@
     A file named **test.record** and **train.record** should have been generated under the data directory. These files will be used to train your TensorFlow model. 
     
  ## Model Training
+ 1. Decide on whether you will use a pre-train model, or train your own. The benefits of using a pre-trained model, and then use transfer learning to learn a new object is that with transfer learning the training can be much quicker, and the required data need it is much less.
+ 2. Decide if you will use [your own custom configuration file](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/configuring_jobs.md), or one that has already been [pre-configure for you](https://github.com/tensorflow/models/tree/master/research/object_detection/samples/configs). For a breakdown on the properties of each pre-configure files, [visit this site](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md). Example: If you want to create a model to detect objects real time, use mobilenet. If  you want to simply classify images and speed is not nessessary, but want your model to be a lot more accurate then you may want to use rcnn. 
+ 3. 
