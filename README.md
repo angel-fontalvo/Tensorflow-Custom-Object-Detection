@@ -1,8 +1,12 @@
 ## Tensorflow Training Process:
-1. [Dependencies Installation](#dependency-installation)
-2. [Data Preparation](#data-preparation)
-3. [Model Training](#model-training)
-4. [Testing Custom Object Detection](#testing-custom-object-detection)
+1. [Clone the Tensorflow API](#clone-the-tensorflow-api)
+2. [Dependencies Installation](#dependency-installation)
+3. [Data Preparation](#data-preparation)
+4. [Model Training](#model-training)
+5. [Testing Custom Object Detection](#testing-custom-object-detection)
+
+## Clone the Tensorflow API
+1. Clone the [Tensorflow API](https://github.com/tensorflow/models) to your local machine.
 
 ## Dependency-Installation
 1. Follow [these](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/installation.md) instructions.
