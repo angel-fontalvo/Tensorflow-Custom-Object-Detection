@@ -6,10 +6,10 @@
 5. [Testing Custom Object Detection](#testing-custom-object-detection)
 
 ## Clone the Tensorflow API
-1. Clone the [Tensorflow API](https://github.com/tensorflow/models) to your local machine.
+1. Clone the [Tensorflow API](https://github.com/tensorflow/models) to your machine.
 
 ## Dependency-Installation
-1. Follow [these](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/installation.md) instructions.
+1. Follow [these](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/installation.md) instructions to install all dependencies on your machine.
 
 ## Data Preparation:
 1.	Manually label the images that contain the object(s) you wish to train. Use the following program to help you with the labelling process: https://github.com/tzutalin/labelImg. The LabelImg app will allow you to label an object within an image, and spit out metadata about that object in an .xml file. 
