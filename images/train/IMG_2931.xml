@@ -1,0 +1,26 @@
+<annotation>
+	<folder>Harley</folder>
+	<filename>IMG_2931.JPG</filename>
+	<path>C:\Users\afont\OneDrive\Desktop\Harley\IMG_2931.JPG</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>4032</width>
+		<height>3024</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Harley</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>1288</xmin>
+			<ymin>1147</ymin>
+			<xmax>2633</xmax>
+			<ymax>2643</ymax>
+		</bndbox>
+	</object>
+</annotation>
