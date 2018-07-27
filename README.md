@@ -16,7 +16,7 @@ Personal project -- Learning how to generate custom object detector models using
 ## Data Preparation:
 1.	Manually label the images that contain the object(s) you wish to train. Use the following program to help you with the labelling process: https://github.com/tzutalin/labelImg. The LabelImg app will allow you to label an object within an image, and spit out metadata about that object in an .xml file. 
 
-**NOTE**: You will need 100 to 500 images to train the model. The more, the better. 
+    **NOTE**: You will need 100 to 500 images to train the model. The more, the better. 
 
 2.	Separate the labeled images into 2 sets: training (90% of total data) & testing (10% of total data).
 
