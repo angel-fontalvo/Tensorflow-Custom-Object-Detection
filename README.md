@@ -75,9 +75,7 @@
   
   8. If everything worked correctly, you should start seeing the following message repeating (with only the step and loss updating):
   
-  ```
-  INFO:tensorflow:global step x: loss = x.xx (0.xxxx sec/step)
-  ```
+  ![TensorFlow training your custom object model](/TrainingSample.png?raw=true "Sample Training")
   
   Your goal should be to get your loss to be about 1. Always make sure it's below 2. While it runs, one option you have is to load up Tensorboard to see how to training is doing. To load up Tensorboard, from the object-detection API, run the following:
   
