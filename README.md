@@ -66,9 +66,9 @@
   
   5. Move the following directories and files to the TensorFlow object-detection API ([models/research/object-detection](https://github.com/tensorflow/models/tree/master/research/object_detection)): **data**, **images**, **the directory where you're keeping your model's data (i.e the model's checkponint, frozen_inference_graph.pb, etc)**, and **training**. 
   
-  6. If you have not already, add **[{LocalPath}/models/research/slim](https://github.com/tensorflow/models/tree/master/research/slim)** to your environment variables as part of **PYTHONPATH**.
+  6. If you have not already, add **[{LOCALPATH}/models/research/slim](https://github.com/tensorflow/models/tree/master/research/slim)** to your environment variables as part of **PYTHONPATH**.
   
-  7. Once you are ready to train, run the following command (from **{HOME}/models/research/object_detection**):
+  7. Once you are ready to train, run the following command (from **{LOCALPATH}/models/research/object_detection**):
   
   ```  
   python legacy/train.py --logtostderr --train_dir=training/ --pipeline_config_path=training/ssd_mobilenet_v1_pets.config    
