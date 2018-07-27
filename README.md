@@ -5,7 +5,7 @@ Personal project -- Learning how to generate custom object detector models using
 2. [Dependencies Installation](#dependency-installation)
 3. [Data Preparation](#data-preparation)
 4. [Model Training](#model-training)
-5. [Model Testing](#testing-custom-object-detection)
+5. [Model Validation](#model-validation)
 
 ## Clone the Tensorflow API
 1. Clone the [Tensorflow API](https://github.com/tensorflow/models) to your machine.
@@ -92,6 +92,6 @@ Personal project -- Learning how to generate custom object detector models using
   
   Running the above script should load up tensorboard on your localhost. And what you want to look out for is mainly **total_loss**. 
   
-  ## Model Testing
+  ## Model Validation
   
   
