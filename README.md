@@ -52,7 +52,6 @@
   
      Example:
   
-    ```
     item {
         id: 1
         name: 'Harley'
@@ -61,7 +60,6 @@
         id: 2
         name: 'Object 2'
     } 
-    ```
   
   5. Move the following directories and files to the TensorFlow object-detection API ([models/research/object-detection](https://github.com/tensorflow/models/tree/master/research/object_detection)): **data**, **images**, **ssd_mobilenet_v1_coco_11_06_2017**, **training**, and **ssd_mobilenet_v1_pets.config**. 
   
