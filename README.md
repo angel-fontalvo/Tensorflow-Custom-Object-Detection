@@ -1,3 +1,5 @@
+Personal project -- Learning how to generate custom train custom object detector models using Tensorflow.
+
 ## Tensorflow Training Process:
 1. [Clone the Tensorflow API](#clone-the-tensorflow-api)
 2. [Dependencies Installation](#dependency-installation)
