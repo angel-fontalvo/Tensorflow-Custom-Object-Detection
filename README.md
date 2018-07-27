@@ -19,6 +19,8 @@
     a.	Convert image .xml data into .csv by running the following script from the terminal:
         
         python xml_to_csv.py
+        
+    Two files will be generated under the **data** directory named **train_label.csv** and **test_label.csv**.
     
     b.	Once you have converted the files from .xml to .csv, then from the tensorflow/models/research directory, run the following command to install the **object_detection** api:
     
