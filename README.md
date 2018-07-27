@@ -48,7 +48,7 @@
     
     c. fine_tune_checkpoint = path to the checkpoint file. 
     
-  4. Modify the file named **object-detection.pbtxt** under the **training** directory. This  file contains a dictionary of all objects we  will be training. 
+  4. Modify the file named **object-detection.pbtxt** under the **data** directory. This  file contains a dictionary of all objects we  will be training. 
   
   5. Move the following directories and files to the TensorFlow object-detection API ([models/research/object-detection](https://github.com/tensorflow/models/tree/master/research/object_detection)): **data**, **images**, **ssd_mobilenet_v1_coco_11_06_2017**, **training**, and **ssd_mobilenet_v1_pets.config**. 
   
