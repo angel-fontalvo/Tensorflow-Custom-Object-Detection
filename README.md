@@ -28,11 +28,11 @@
     
     c.  Once the object_detection API has  been installed, then we're ready to generate the TF records. We'll be using the script named **generate_tfrecord.py**. Note:There are a few modifications that must be made: Modify the **row_label** value to be  equals to whatever label you gave the images on step 1. Once you are ready, run the following:
         
-        python generate_tfrecord.py --csv_input=data/train_labels.csv  --output_path=data/train.record
+        python generate_tfrecord.py --csv_input=data/test_labels.csv  --output_path=data/test.record --data_path=images/test
         
-        python generate_tfrecord.py --csv_input=data/test_labels.csv  --output_path=data/test.record
+        python generate_tfrecord.py --csv_input=data/train_labels.csv  --output_path=data/train.record --data_path=images/train
         
-    A file named **test.record** and **train.record** should have been generated under the data directory. These files will be used to train your TensorFlow model. 
+    A file named **test.record** and **train.record** should have been generated under the **data** directory. These files will be used to train your TensorFlow model. 
     
  ## Model Training
  1. Decide on whether you will use a pre-train model, or training your own from scratch. The benefits of using a pre-trained model, and then use transfer learning to learn a new object is that with transfer learning the training can be much quicker, and the required data need it is much less. You may obtain some pre-train models [through this site](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md).
