@@ -1,9 +1,11 @@
+Personal project -- Learning how to generate custom object detector models using Tensorflow. For this exercise I used my dog, Harley, as the primary subject to train the model on. 
+
 ## Tensorflow Training Process:
 1. [Clone the Tensorflow API](#clone-the-tensorflow-api)
 2. [Dependencies Installation](#dependency-installation)
 3. [Data Preparation](#data-preparation)
 4. [Model Training](#model-training)
-5. [Testing Custom Object Detection](#testing-custom-object-detection)
+5. [Model Validation](#model-validation)
 
 ## Clone the Tensorflow API
 1. Clone the [Tensorflow API](https://github.com/tensorflow/models) to your machine.
@@ -13,7 +15,11 @@
 
 ## Data Preparation:
 1.	Manually label the images that contain the object(s) you wish to train. Use the following program to help you with the labelling process: https://github.com/tzutalin/labelImg. The LabelImg app will allow you to label an object within an image, and spit out metadata about that object in an .xml file. 
+
+    **NOTE**: You will need 100 to 500 images to train the model. The more, the better. 
+
 2.	Separate the labeled images into 2 sets: training (90% of total data) & testing (10% of total data).
+
 3.	Create TF records for the datasets:
     
     a.	Convert image .xml data into .csv by running the following script from the terminal:
@@ -36,6 +42,7 @@
     
  ## Model Training
  1. Decide on whether you will use a pre-train model, or training your own from scratch. The benefits of using a pre-trained model, and then use transfer learning to learn a new object is that with transfer learning the training can be much quicker, and the required data need it is much less. You may obtain some pre-train models [through this site](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md).
+ 
  2. Decide if you will use [your own custom configuration file](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/configuring_jobs.md), or one that has already been [pre-configure for you](https://github.com/tensorflow/models/tree/master/research/object_detection/samples/configs). Example: If you want to create a model to detect objects real time, use mobilenet. If  you want to simply classify images and speed is not nessessary, but want your model to be a lot more accurate then you may want to use rcnn.
  
  **NOTE**: For this exersice, we're using a pre-configure file (ssd_mobilenet_v1_pets.config) and  it has been placed  under the **training** directory. 
@@ -63,9 +70,9 @@
   
   5. Move the following directories and files to the TensorFlow object-detection API ([models/research/object-detection](https://github.com/tensorflow/models/tree/master/research/object_detection)): **data**, **images**, **the directory where you're keeping your model's data (i.e the model's checkponint, frozen_inference_graph.pb, etc)**, and **training**. 
   
-  6. If you have not already, add **[{LocalPath}/models/research/slim](https://github.com/tensorflow/models/tree/master/research/slim)** to your environment variables as part of **PYTHONPATH**.
+  6. If you have not already, add **[{LOCALPATH}/models/research/slim](https://github.com/tensorflow/models/tree/master/research/slim)** to your environment variables as part of **PYTHONPATH**.
   
-  7. Once you are ready to train, run the following command (from **{HOME}/models/research/object_detection**):
+  7. Once you are ready to train, run the following command (from **{LOCALPATH}/models/research/object_detection**):
   
   ```  
   python legacy/train.py --logtostderr --train_dir=training/ --pipeline_config_path=training/ssd_mobilenet_v1_pets.config    
@@ -85,6 +92,6 @@
   
   Running the above script should load up tensorboard on your localhost. And what you want to look out for is mainly **total_loss**. 
   
-  ## Testing Custom Object Detection
+  ## Model Validation
   
   
