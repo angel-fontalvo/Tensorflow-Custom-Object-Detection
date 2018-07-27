@@ -48,7 +48,7 @@
     
     c. fine_tune_checkpoint = path to the checkpoint file. 
     
-  4. Modify the file named **object-detection.pbtxt** under the **training** directory. This  file contains a dictionary of all objects we  will be training. 
+  4. Modify the file named **object-detection.pbtxt** under the **data** directory. This  file contains a dictionary of all objects we  will be training. 
   
      Example:
   
