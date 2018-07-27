@@ -1,4 +1,4 @@
-Personal project -- Learning how to generate custom object detector models using Tensorflow. For this exercise I used my dog, Harley, as the primary object to train the model on. 
+Personal project -- Learning how to generate custom object detector models using Tensorflow. For this exercise I used my dog, Harley, as the primary subject to train the model on. 
 
 ## Tensorflow Training Process:
 1. [Clone the Tensorflow API](#clone-the-tensorflow-api)
