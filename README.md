@@ -65,7 +65,7 @@
   
   6. If you have not already, add **[{LocalPath}/models/research/slim](https://github.com/tensorflow/models/tree/master/research/slim)** to your environment variables as part of **PYTHONPATH**.
   
-  7. Once you are ready to train, run the following command:
+  7. Once you are ready to train, run the following command (from **{HOME}/models/research/object_detection**):
   
   ```  
   python legacy/train.py --logtostderr --train_dir=training/ --pipeline_config_path=training/ssd_mobilenet_v1_pets.config    
