@@ -50,6 +50,19 @@
     
   4. Modify the file named **object-detection.pbtxt** under the **data** directory. This  file contains a dictionary of all objects we  will be training. 
   
+  Example:
+  
+  ```
+  item {
+    id: 1
+    name: 'Harley'
+  }
+  item {
+    id: 2
+    name: 'Object 2'
+  } 
+  ```
+  
   5. Move the following directories and files to the TensorFlow object-detection API ([models/research/object-detection](https://github.com/tensorflow/models/tree/master/research/object_detection)): **data**, **images**, **ssd_mobilenet_v1_coco_11_06_2017**, **training**, and **ssd_mobilenet_v1_pets.config**. 
   
   6. If you have not already, add **[{LocalPath}/models/research/slim](https://github.com/tensorflow/models/tree/master/research/slim)** to your environment variables as part of **PYTHONPATH**.
