@@ -90,8 +90,28 @@ Personal project -- Learning how to generate custom object detector models using
   tensorboard --logdir=training/
   ```
   
-  Running the above script should load up tensorboard on your localhost. And what you want to look out for is mainly **total_loss**. 
+  Running the above script should load up tensorboard on your localhost. And what you want to look out for is mainly **total_loss**:
+  
+  ![Loss Function](/EndingGraph.png?raw=true "Sample Training")
   
   ## Model Validation
+  
+ 1. Once you have a model that's already trained, you'll have to take a look at how it does. Before we can start testing against real images, there's a few things you'll have to do:
+ 
+   a. You'll have to export the inference graph. To do so run the following command (from **{LOCALPATH}/models/research/object_detection**):
+   
+      python export_inference_graph.py \
+      --input_type image_tensor \
+      --pipeline_config_path training/ssd_mobilenet_v1_pets.config \
+      --trained_checkpoint_prefix training/model.ckpt-7218 \
+      --output_directory Harley_inference_graph
+      
+   Remember, your checkpoints files are located in the **training** directory. For **trained_checkpoint_prefix** use the one with the highest step. Make sure you have all 3 file extensions (.data-00000-of-00001, .index, and .meta). You could have stopped the training while TensorFlow was saving, and you may have only saved 1 or 2 files. If you did, then go to the next highest one. 
+   
+   b. Check your inference graph was created. It should be whereever you specified it for the **output_directory**, with whatever name you gave  it. 
+   
+  2. To test: within Jupyter Notebook, load up **object_detection_tutorial.ipynb**. 
+   
+  
   
   
