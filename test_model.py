@@ -30,35 +30,39 @@ with detection_graph.as_default():
     od_graph_def.ParseFromString(serialized_graph)
     tf.import_graph_def(od_graph_def, name='')
 
+PATH_TO_TEST_IMAGES_DIR = 'test_images'
+TEST_IMAGE_PATHS = [ os.path.join(PATH_TO_TEST_IMAGES_DIR, 'image{}.jpg'.format(i)) for i in range(1, 6) ]
+
 with detection_graph.as_default():
     with tf.Session(graph=detection_graph) as sess:
-        while True:
-            # Read and preprocess an image.
-            img = cv.imread('test_images/image1.jpg')
-            image_np_expanded = np.expand_dims(img, axis=0)
-            
-            image_tensor = detection_graph.get_tensor_by_name('image_tensor:0')
-            boxes = detection_graph.get_tensor_by_name('detection_boxes:0')
-            scores = detection_graph.get_tensor_by_name('detection_scores:0')
-            classes = detection_graph.get_tensor_by_name('detection_classes:0')
-            num_detections = detection_graph.get_tensor_by_name('num_detections:0')
+            for image_path in TEST_IMAGE_PATHS:
+                    while True:
+                        # Read and preprocess an image.
+                        img = cv.imread(image_path)
+                        image_np_expanded = np.expand_dims(img, axis=0)
+                        
+                        image_tensor = detection_graph.get_tensor_by_name('image_tensor:0')
+                        boxes = detection_graph.get_tensor_by_name('detection_boxes:0')
+                        scores = detection_graph.get_tensor_by_name('detection_scores:0')
+                        classes = detection_graph.get_tensor_by_name('detection_classes:0')
+                        num_detections = detection_graph.get_tensor_by_name('num_detections:0')
 
-            # Detection from the model
-            (boxes, scores, classes, num_detections) = sess.run(
-                [boxes, scores, classes, num_detections],
-                feed_dict={image_tensor: image_np_expanded})
+                        # Detection from the model
+                        (boxes, scores, classes, num_detections) = sess.run(
+                            [boxes, scores, classes, num_detections],
+                            feed_dict={image_tensor: image_np_expanded})
 
-            # Visualization of the results of a detection.
-            vis_util.visualize_boxes_and_labels_on_image_array(
-            img,
-            np.squeeze(boxes),
-            np.squeeze(classes).astype(np.int32),
-            np.squeeze(scores),
-            category_index,
-            use_normalized_coordinates=True,
-            line_thickness=8)
+                        # Visualization of the results of a detection.
+                        vis_util.visualize_boxes_and_labels_on_image_array(
+                        img,
+                        np.squeeze(boxes),
+                        np.squeeze(classes).astype(np.int32),
+                        np.squeeze(scores),
+                        category_index,
+                        use_normalized_coordinates=True,
+                        line_thickness=8)
 
-            cv.imshow('object detection', cv.resize(img, (800,600)))
-            if cv.waitKey(25) & 0xFF == ord('q'):
-                cv.destroyAllWindows()
-                break
+                        cv.imshow('object detection', cv.resize(img, (800,600)))
+                        if cv.waitKey(25) & 0xFF == ord('q'):
+                            cv.destroyAllWindows()
+                            break
