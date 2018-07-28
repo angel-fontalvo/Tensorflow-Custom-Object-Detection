@@ -96,9 +96,9 @@ Personal project -- Learning how to generate custom object detector models using
   
   ## Model Validation
   
- 1. Once you have a model that's already trained, you'll have to take a look at how it does. Before we can start testing against real images, there's a few things you'll have to do:
+   1. Once you have a model that's already trained, you'll have to take a look at how it does. Before we can start testing against images, there's a few things you'll have to do:
  
-   a. You'll have to export the inference graph. To do so run the following command (from **{LOCALPATH}/models/research/object_detection**):
+      a. You'll have to export the inference graph. To do so run the following command (from **{LOCALPATH}/models/research/object_detection**):
    
       python export_inference_graph.py \
       --input_type image_tensor \
@@ -106,19 +106,19 @@ Personal project -- Learning how to generate custom object detector models using
       --trained_checkpoint_prefix training/model.ckpt-7218 \
       --output_directory Harley_inference_graph
       
-   Remember, your checkpoints files are located in the **training** directory. For **trained_checkpoint_prefix** use the one with the highest step. Make sure you have all 3 file extensions (.data-00000-of-00001, .index, and .meta). You could have stopped the training while TensorFlow was saving, and you may have only saved 1 or 2 files. If you did, then go to the next highest one. 
+      Remember, your checkpoints files are located in the **training** directory. For **trained_checkpoint_prefix** use the one with the highest step. Make sure you have all 3 file extensions (.data-00000-of-00001, .index, and .meta). You could have stopped the training while TensorFlow was saving, and you may have only saved 1 or 2 files. If you did, then go to the next highest one. 
    
-   b. Check your inference graph was created. It should be whereever you specified it for the **output_directory**, with whatever name you gave  it. 
+      b. Check your inference graph was created. It should be whereever you specified it for the **output_directory**, with whatever name you gave  it. 
    
-  2. Put anywhere between 1-6 images you wish to test in the directory **test_images**, and copy it onto **{LOCALPATH}/models/research/object_detection**. 
+   2. Put anywhere between 1-6 images you wish to test in the directory **test_images**, and copy it onto **{LOCALPATH}/models/research/object_detection**. 
   
-  3. Move the script named **test_model.py** to **{LOCALPATH}/models/research/object_detection**, and update the following variables: MODEL_NAME, PATH_TO_LABELS, NUM_CLASSES. Once ready, run the script:
+   3. Move the script named **test_model.py** to **{LOCALPATH}/models/research/object_detection**, and update the following variables: MODEL_NAME, PATH_TO_LABELS, NUM_CLASSES. Once ready, run the script:
   
       ```
       python test_model.py
       ```
   
-  And you should get the result for each image (press q to quit each window and move to the next): 
+   And you should get the result for each image (press q to quit each window and move to the next): 
   
    ![Loss Function](/test_results/HarleyTest1.png?raw=true "Sample Result")
    ![Loss Function](/test_results/HarleyTest2.png?raw=true "Sample Result")
