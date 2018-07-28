@@ -41,7 +41,7 @@ Personal project -- Learning how to generate custom object detector models using
     A file named **test.record** and **train.record** should have been generated under the **data** directory. These files will be used to train your TensorFlow model. 
     
  ## Model Training
- 1. Decide whether you will use a pre-train model, or training your own from scratch. The benefits of using a pre-trained model, and then use transfer learning to learn a new object is that with transfer learning the training can be much quicker, and the required data need it is much less. You may obtain some pre-train models [through this site](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md).
+ 1. Decide whether you will use a pre-train model, or training your own from scratch. The benefits of using a pre-trained model, and then using transfer learning to learn a new object is that with transfer learning the training can be much quicker, and the required data need it is much less. You may obtain some pre-train models [through this site](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md).
  
  2. Decide if you will use [your own custom configuration file](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/configuring_jobs.md), or one that has already been [pre-configure for you](https://github.com/tensorflow/models/tree/master/research/object_detection/samples/configs). Example: If you want to create a model to detect objects real time, use mobilenet. If  you want to simply classify images and speed is not nessessary, but want your model to be a lot more accurate then you may want to use rcnn.
  
