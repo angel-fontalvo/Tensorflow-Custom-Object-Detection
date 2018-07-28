@@ -110,8 +110,21 @@ Personal project -- Learning how to generate custom object detector models using
    
    b. Check your inference graph was created. It should be whereever you specified it for the **output_directory**, with whatever name you gave  it. 
    
-  2. To test: within Jupyter Notebook, load up **object_detection_tutorial.ipynb**. 
-   
+  2. Put anywhere between 1-6 images you wish to test in the directory **test_images**, and copy it onto **{LOCALPATH}/models/research/object_detection**. 
+  
+  3. Move the script named **test_model.py** to **{LOCALPATH}/models/research/object_detection**, and update the following variables: MODEL_NAME, PATH_TO_LABELS, NUM_CLASSES. Once ready, run the script:
+  
+      ```
+      python test_model.py
+      ```
+  
+  And you should get the result for each image (press q to quit each window and move to the next): 
+  
+   ![Loss Function](/test_results/HarleyTest1.png?raw=true "Sample Result")
+   ![Loss Function](/test_results/HarleyTest2.png?raw=true "Sample Result")
+   ![Loss Function](/test_results/HarleyTest3.png?raw=true "Sample Result")
+   ![Loss Function](/test_results/HarleyTest4.png?raw=true "Sample Result")
+   ![Loss Function](/test_results/HarleyTest5.png?raw=true "Sample Result")
   
   
   
